@@ -1,0 +1,3 @@
+# Math Genius plugin runtime dependencies
+sympy
+numpy  # optional; the plugin degrades gracefully if numpy is unavailable
