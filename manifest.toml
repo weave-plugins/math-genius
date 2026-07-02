@@ -1,0 +1,24 @@
+[plugin]
+id = "com.weave.external.math_genius"
+name = "Math Genius (Python)"
+version = "1.0.0"
+author = "Kael Valen"
+description = "Advanced mathematical solver using SymPy and NumPy for symbolic calculus, linear algebra, and differential equations."
+category = "productivity"
+
+[capabilities]
+provide = ["math.solve"]
+
+[capabilities.schemas]
+"math.solve" = """{
+  "task": "integrate x^2 from 0 to 1",
+  "code": "import sympy\\nx = sympy.Symbol('x')\\nresult = sympy.integrate(x**2, (x, 0, 1))"
+}"""
+
+[capabilities.descriptions]
+"math.solve" = "Executes arbitrary Python code to solve advanced math problems. Pass a valid Python script in `code` that assigns the final answer to a variable named `result`."
+
+[runtime]
+type = "python"
+entry = "main.py"
+sandbox = "relaxed"
