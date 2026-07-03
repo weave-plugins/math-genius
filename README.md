@@ -153,4 +153,5 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ---
 
-*Built with ❤️ by [Kael Valen](https://github.com/weave-ai) for the Weave AI Ecosystem.*
+*Built with ❤️ by [Kael Valen](https://github.com/kaelvalen/weave) for the Weave AI Ecosystem.*
+
